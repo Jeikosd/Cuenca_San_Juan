@@ -18,7 +18,7 @@ sum_by_var <- function(var, all_dirs, final_name, out_dir){
   # all_dirs <- dirs_raster
   # mask <- cuenca
   
-  filter_var <- data_frame(text = dirs_raster) %>%
+  filter_var <- data_frame(text = all_dirs) %>%
     filter(grepl(var, text)) %>%
     magrittr::extract2(1) %>%
     mixedsort()
