@@ -38,8 +38,14 @@ average_by_var <- function(var, all_dirs, final_name, out_dir){
     raster::stack()
   
   avg_raster <- mean(list_raster)
+  sum_raster <- sum(list_raster)
   
   writeRaster(avg_raster,
+              paste0(out_dir, var, "_avg.asc"),
+              format = 'ascii', 
+              overwrite = TRUE)
+  
+  writeRaster(sum_raster,
               paste0(out_dir, var, "_avg.asc"),
               format = 'ascii', 
               overwrite = TRUE)
