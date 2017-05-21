@@ -24,7 +24,7 @@ vars <- list.files(dir_rasters, pattern = "avg.asc$", full.names = T) %>%
 
 out_dir <- 'data/summaries/'
 
-extract_by_polygon <- function(dir_raster, shape, vars, out_dir){
+extract_by_polygon <- function(dir_rasters, shape, vars, out_dir){
   
   # dir_rasters <- result_raster
   # shape <- cuenca
