@@ -93,4 +93,3 @@ extract_by_polygon <- function(dir_raster, shape, vars, out_dir){
 extract_by_polygon(dir_raster, shape, vars, out_dir)
 
 
-lapply(avg_raster, extract_by_polygon, cuenca, out_dir)
