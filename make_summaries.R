@@ -90,6 +90,6 @@ extract_by_polygon <- function(dir_rasters, shape, vars, out_dir){
   
 }
 
-extract_by_polygon(dir_raster, shape, vars, out_dir)
+extract_by_polygon(result_raster, cuenca, vars, out_dir)
 
 
