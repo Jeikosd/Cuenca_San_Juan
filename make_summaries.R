@@ -16,7 +16,7 @@ result_raster <- paste0(path, 'summaries')
 
 cuenca <- st_read(dsn = paste0(path, 'mask/cuencas_finalOK.shp'), layer = 'cuencas_finalOK') 
 
-vars <- list.files(dir_rasters, pattern = "avg.asc$", full.names = T) %>%
+vars <- list.files(result_raster, pattern = "avg.asc$", full.names = T) %>%
   str_replace("([[:digit:]]+)", "") %>%
   str_replace("_avg.asc", "") %>%
   unique() %>%
